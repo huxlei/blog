@@ -10,10 +10,12 @@
   },
   "license": "ISC",
   "devDependencies": {
+    "@vuepress/plugin-blog": "^1.9.4",
     "less": "^4.1.1",
     "vuepress": "^1.8.2"
   },
   "dependencies": {
-    "less-loader": "^5.0.0"
+    "less-loader": "^5.0.0",
+    "vuepress-plugin-blog-multidir": "^1.0.5"
   }
 }

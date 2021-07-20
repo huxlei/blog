@@ -3,5 +3,6 @@ module.exports = {
   description: 'Just playing around',
   themeConfig: {
     bannerImg: 'banner.png'
-  }
+  },
+  plugins: []
 }
