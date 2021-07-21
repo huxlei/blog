@@ -41,7 +41,9 @@ export default {
     };
   },
 
-  created() {},
+  created() {
+    console.log(this.$site);
+  },
 
   mounted() {},
 
@@ -58,7 +60,11 @@ export default {
      * 跳转到文章详情页
      */
     goPage(url) {
-      window.open(url, '_self');
+      let pageUrl = url;
+      if (this.$site.base) {
+        pageUrl = this.$site.base + url;
+      }
+      window.open(pageUrl, '_self');
     }
   },
 
