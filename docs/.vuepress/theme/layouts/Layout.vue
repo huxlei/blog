@@ -60,9 +60,9 @@ export default {
      * 跳转到文章详情页
      */
     goPage(url) {
-      let pageUrl = url;
+      let pageUrl = url.indexOf('/') == 0 ? url.replace('/', '') : url;
       if (this.$site.base) {
-        pageUrl = this.$site.base + url;
+        pageUrl = this.$site.base + pageUrl;
       }
       window.open(pageUrl, '_self');
     }
