@@ -111,11 +111,11 @@ export default {
       border-radius 10px
       background #fff
       display flex
+      flex-wrap wrap
       margin-bottom 20px
       overflow hidden
       .text 
         padding 20px
-        width 100%
         .title 
           font-size 20px
           font-weight bold
