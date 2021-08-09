@@ -53,7 +53,6 @@ export default {
       display flex
       justify-content center
       font-size 40px
-      font-weight bold
       text-shadow 0 1px 5px rgb(0 0 1 / 30%)
       padding-top 20px
 </style>

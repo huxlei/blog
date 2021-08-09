@@ -4,7 +4,7 @@
     <!-- banner -->
     <div class="banner_zone" :style="{'background-image': 'url(' + $site.themeConfig.bannerImg + ')'}">
       <div class="title">首页</div>
-      <div class="desc">描述</div>
+      <div class="desc">{{$site.description}}</div>
     </div>
     <!-- 文章列表 -->
     <div>
@@ -53,8 +53,8 @@ export default {
      */
     getListItemImg(item) {
       if(item.frontmatter.image) return item.frontmatter.image;
-      if(item.frontmatter.date) return 'https://picsum.photos/536/354/?random&date=' + item.frontmatter.date;
-      return 'https://picsum.photos/536/354'
+      if(item.frontmatter.date) return 'https://picsum.photos/536/354/?random&date=' + item.frontmatter.date + '.webp';
+      return 'https://picsum.photos/536/354.webp'
     },
     /**
      * 跳转到文章详情页
@@ -97,6 +97,7 @@ export default {
     align-items center
     flex-direction column
     color #fff
+    background-image url('/blog/assets/img/banner2.webp')
     .title 
       font-size 40px
     .desc 
