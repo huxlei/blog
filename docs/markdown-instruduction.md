@@ -10,12 +10,12 @@ Markdown 是一门轻量级的标记语言
 - 标记语言，通过一些符号来标识文本的格式，比如：通过井号 (#) 标识标题，通过星号 (*) 标识文本的文字是粗体还是斜体等
 - 轻量级，Markdown 的设计观念是，在通过一些符号标记文本格式的同时，不影响文本的可读性。相比 HTML 等标记语言，Markdown 的标记语法更加简单，且原始文本的可读性更强
 
-Markdown 可以使用普通的文本编辑器进行读取和编辑，不像 Word 文档，虽然也可以设置文本的格式，但必须使用 Office 或 WPS 等编辑器才能打开。当然也有专门的编辑器可以在编辑文档的同时预览文件样式：
+Markdown 可以使用普通的文本编辑器进行读取和编辑，文件后缀为 .md，不像 Word 文档，虽然也可以设置文本的格式，但必须使用 Office 或 WPS 等编辑器才能打开。当然也有专门的编辑器可以在编辑文档的同时预览文件样式：
 
 - [Typora](https://typora.io/ "点击跳转 Typora 官网")，一款非常好用的 Markdown 编辑器，我现在用的就是这个编辑器
 - [Dillinger](https://dillinger.io/ "点击跳转 Dillinger 官网")， 在线 Markdown 编辑器，可以同时查看原始格式和渲染后的效果，可以通过 Dillinger 来练习 Markdown 语法
 
-这篇博客就是使用 Markdown 写的，不过我们现在看到的是渲染后的效果，[《Markdown 原始格式》](https://huxlei.github.io/blog/markdown-ins-source.thml) 展示了本篇博客的原始格式。
+这篇博客就是使用 Markdown 写的，不过我们现在看到的是渲染后的效果，[《Markdown 原始格式》](https://huxlei.github.io/blog/markdown-ins-source.html) 展示了本篇博客的原始格式。
 
 下面来介绍一些常用的语法：
 
@@ -71,6 +71,7 @@ Markdown 可以使用普通的文本编辑器进行读取和编辑，不像 Word
 渲染后的样式：
 
 *斜体文字*
+
 需要*斜体*表示的文字
 
 # 3、列表
@@ -166,7 +167,7 @@ Markdown 可以使用普通的文本编辑器进行读取和编辑，不像 Word
 - 如果需要在文本中显示反斜杠，就在反斜杠前再添加一个反斜杠
 - 转义字符的意思就是转变字符的含义，让本来表示文本格式的符号，转义为普通的符号
 
-[《Markdown 原始格式》](https://huxlei.github.io/blog/markdown-ins-source.thml) 这篇博客就是通过将所有用来标识格式的符号进行了转义
+[《Markdown 原始格式》](https://huxlei.github.io/blog/markdown-ins-source.html) 这篇博客就是通过将所有用来标识格式的符号进行了转义
 
 # 7、代码
 
