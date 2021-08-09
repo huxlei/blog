@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Markdown 原始格式 | 敲代码的老胡</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="认认真真地度过这一生">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.fe0b12ba.css" as="style"><link rel="preload" href="/blog/assets/js/app.f55d8160.js" as="script"><link rel="preload" href="/blog/assets/js/3.13b63e11.js" as="script"><link rel="preload" href="/blog/assets/js/6.6b9ab5a2.js" as="script"><link rel="prefetch" href="/blog/assets/js/2.4f8e94ce.js"><link rel="prefetch" href="/blog/assets/js/4.8a3bee3b.js"><link rel="prefetch" href="/blog/assets/js/5.04922fa0.js"><link rel="prefetch" href="/blog/assets/js/7.7a66cb95.js"><link rel="prefetch" href="/blog/assets/js/8.01e48f81.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.fe0b12ba.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div id="global_layout" data-v-47a0f6e4><div class="nav_zone" data-v-47a0f6e4><div data-v-47a0f6e4></div> <div class="title" data-v-47a0f6e4>敲代码的老胡</div></div> <div id="page" data-v-74fa6968 data-v-47a0f6e4><div class="content_zone" data-v-74fa6968><div class="title" data-v-74fa6968>Markdown 原始格式</div> <div class="content content__default" data-v-74fa6968><p>Markdown 是一门轻量级的标记语言</p> <p>- 标记语言，通过一些符号来标识文本的格式，比如：通过井号 (#) 标识标题，通过星号 (*) 标识文本的文字是粗体还是斜体等
+- 轻量级，Markdown 的设计观念是，在通过一些符号标记文本格式的同时，不影响文本的可读性。相比 HTML 等标记语言，Markdown 的标记语法更加简单，且原始文本的可读性更强</p> <p>Markdown 可以使用普通的文本编辑器进行读取和编辑，不像 Word 文档，虽然也可以设置文本的格式，但必须使用 Office 或 WPS 等编辑器才能打开。当然也有专门的编辑器可以在编辑文档的同时预览文件样式：</p> <p>- [Typora](https://typora.io/ &quot;点击跳转 Typora 官网&quot;)，一款非常好用的 Markdown 编辑器，我现在用的就是这个编辑器
+- [Dillinger](https://dillinger.io/ &quot;点击跳转 Dillinger 官网&quot;)， 在线 Markdown 编辑器，可以同时查看原始格式和渲染后的效果，可以通过 Dillinger 来练习 Markdown 语法</p> <p>下面来介绍一些常用的语法：</p> <p># 1、标题</p> <p>在标题文字前添加井号 (#)，语法格式 ：</p> <p>```
+# 一级标题
+## 二级标题
+### 三级标题
+```</p> <p>- 井号的数量代表标题的级别
+- 井号和标题之间需要有一个空格</p> <p>渲染后的样式：</p> <p>&lt;\h1&gt;一级标题&lt;/\h1&gt;</p> <p>&lt;\h2&gt;二级标题&lt;/\h2&gt;</p> <p>&lt;\h3&gt;三级标题&lt;/\h3&gt;</p> <p># 2、文字格式</p> <p>文字的格式包括粗体、斜体</p> <p>## 2.1、粗体</p> <p>在需要加粗的文字前后分别添加两个星号 (*)，语法格式：</p> <p>```
+**需要加粗的文字**
+需要**加粗**的文字也可以在一句话的中间
+```</p> <p>渲染后的样式：</p> <p>**需要加粗的文字**</p> <p>需要**加粗**的文字也可以在一句话的中间</p> <p>## 2.2、斜体</p> <p>在需要通过斜体表示的文字前后分别添加一个星号 (*)，语法格式：</p> <p>```
+*斜体文字*
+需要*斜体*表示的文字
+```</p> <p>渲染后的样式：</p> <p>*斜体文字*
+需要*斜体*表示的文字</p> <p># 3、列表</p> <p>列表分为有序列表和无需列表</p> <p>## 3.1、有序列表</p> <p>通过列表序号数字 (1 2 3 4) + 句号 (.) + 空格来表示有序列表，语法格式：</p> <p>```</p> <ol><li>有序列表第一项</li> <li>有序列表第二项</li> <li>有序列表第三项
+```</li></ol> <p>- 列表内容和句号之间需要添加一个空格</p> <p>渲染后的样式：</p> <ol><li>有序列表第一项</li> <li>有序列表第二项</li> <li>有序列表第三项</li></ol> <p>## 3.2、无序列表</p> <p>通过破折号 (-) 加空格来表示无序列表，语法格式：</p> <p>```
+- 无序列表一
+- 无序列表二
+- 无序列表三
+```</p> <p>- 列表内容和破折号 (-) 之间需要添加一个空格</p> <p>渲染后的样式：</p> <p>- 无序列表一
+- 无序列表二
+- 无序列表三</p> <p># 4、链接</p> <p>给文字添加上链接，这样在点击文字时，就会跳转到对应的链接地址，语法格式：</p> <p>```
+[爱敲代码的老胡](huxlei.github.io/blog)
+```</p> <p>- 中括号中为要添加链接的文字内容
+- 括号中为链接地址</p> <p>渲染后的样式：</p> <p>[爱敲代码的老胡](huxlei.github.io/blog)</p> <p>给链接添加标题，鼠标悬浮到文字上个时，就会显示链接标题内容，语法格式：</p> <p>```
+[爱敲代码的老胡](huxlei.github.io/bolg &quot;其实没那么喜欢&quot;)
+```</p> <p>渲染后的样式：</p> <p>[爱敲代码的老胡](huxlei.github.io/bolg &quot;其实没那么喜欢&quot;)</p> <p># 5、图片</p> <p>在 markdown 文档中添加图片，语法格式：</p> <p>```
+![图片的标题](D:\picture\hello.jpg)
+![网络图片](https://picsum.photos/536/354/?random&amp;date=2021-07-19)
+```</p> <p>- 中括号 ([]) 中为图片的标题，可以为空
+- 括号中是图片的地址，可以是本地图片的路径，也可以是网络图片地址</p> <p>渲染后的样式：</p> <p>![网络图片](https://picsum.photos/536/354/?random&amp;date=2021-07-19)</p> <p># 6、转义字符</p> <p>为了标记文本的格式，我们用到了井号 (#)、星号 (*)、破折号 (-) 等，如果要在文本内容显示这些符号，而不是用它们来标记样式，那就要用到转义字符</p> <p>语法格式：</p> <p>```
+\#
+```</p> <p>- 在需要在文本中显示的符号前添加反斜杠 (\, 回车键上面那个键)
+- 如果需要在文本中显示反斜杠，就在反斜杠前再添加一个反斜杠</p> <p>转义字符的意思就是转变字符的含义，让本来表示文本格式的符号，转义为普通的符号</p> <p># 7、代码</p> <p>## 7.1、短语代码</p> <p>将单词或短语标识为代码，语法格式：</p> <p>```
+我在使用 <code>markdown</code> 写博客
+```</p> <p>渲染后的样式：</p> <p>我在使用 `markdown` 写博客</p> <p>## 7.2、代码块</p> <p>作为一名程序员，当然少不了在文本中添加代码，那要如何表示代码块呢</p> <p>语法格式：</p> <p>````
+```java
+public static void main(Stringp[] args){}
+```
+````</p> <p>- 在代码块的前后分别添加三个反引号 (`, 数字 1 键左边的键)</p> <p>- 许多 markdown 处理器支持代码块高亮语法，在代码块开始的反引号旁指定代码块语言类型</p> <p>渲染后的样式：</p> <p>```java
+public static void main(Stringp[] args){}
+```</p></div></div></div></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.f55d8160.js" defer></script><script src="/blog/assets/js/3.13b63e11.js" defer></script><script src="/blog/assets/js/6.6b9ab5a2.js" defer></script>
+  </body>
+</html>
