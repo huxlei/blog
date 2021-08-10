@@ -10,27 +10,7 @@
 
 <script>
 export default {
-
   name:'Page',
-
-  components: {},
-
-  props: {},
-
-  data () {
-    return {
-    };
-  },
-
-  computed: {},
-
-  created() {},
-
-  mounted() {},
-
-  methods: {},
-
-  watch: {}
 }
 
 </script>
@@ -42,6 +22,7 @@ export default {
   background-size cover
   background-attachment fixed
   padding-top 100px
+  padding-bottom 50px
   .content_zone
     max-width 1200px
     min-height 600px

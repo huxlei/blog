@@ -15,7 +15,9 @@
           class="item" 
           @click='goPage(item.path)'
         >
-          <img loading="lazy" :src="getListItemImg(item)">
+          <div class="item_img">
+            <img loading="lazy" :src="getListItemImg(item)">
+          </div>
           <div class="text">
             <!-- 标题 -->
             <div class="title">{{item.title}}</div>
@@ -33,19 +35,6 @@
 export default {
 
   name:'Layout',
-
-  components: {},
-
-  data () {
-    return {
-    };
-  },
-
-  created() {
-    console.log(this.$site);
-  },
-
-  mounted() {},
 
   methods: {
     /**
@@ -72,15 +61,13 @@ export default {
     articleList() {
       let artList = [];
       this.$site.pages.forEach(item => {
-        if (!item.frontmatter.home) {
+        if (!item.frontmatter.notShow) {
           artList.push(item);
         }
       })
       return artList;
     }
   },
-
-  watch: {}
 }
 
 </script>
@@ -115,8 +102,14 @@ export default {
       flex-wrap wrap
       margin-bottom 20px
       overflow hidden
+      cursor pointer
+      .item_img
+        width 536px
+        height 354px
+        overflow hidden
       .text 
         padding 20px
+        overflow hidden
         .title 
           font-size 20px
           font-weight bold
@@ -127,4 +120,17 @@ export default {
         .excerpt
           margin-top 10px
           line-height 2
+          > p
+            overflow hidden
+            white-space nowrap
+            text-overflow ellipsis
+@media (max-width $phoneWidth)
+  .banner_zone
+    height 300px !important
+  .content_zone 
+    padding 0 10px
+    .item
+      .item_img
+        height 200px !important
+
 </style>
